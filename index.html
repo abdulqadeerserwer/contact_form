@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Form</title>
+    <meta name="description" content="Contact Form" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700,300|Open+Sans:400,600,700,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+
+  <body>
+    <section class="section-padding wow fadeInUp delay-05s" id="contact">
+      <div class="container">
+        <div class="row white">
+          <div class="col-md-8 col-sm-12">
+            <div class="section-title">
+              <h2 class="head-title black">Get Started Today!</h2>
+              <hr class="botm-line" />
+              <p class="sec-para black">
+                Fill out the form below to take the first step to improve your
+                online presence and increase sales.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-12 col-sm-12">
+            <div class="col-md-4 col-sm-6" style="padding-left:0px;">
+              <h3 class="cont-title">Email Us</h3>
+              <div class="contact-info">
+                <form
+                  name="submit-to-google-sheet"
+                  id="book-form"
+                  class="gform contactForm"
+                  method="POST"
+                  action="https://script.google.com/macros/s/AKfycby-cb5EznkkPUvwLPbSrwr5OYRQA2Wf1YVQBAKkvQ/exec"
+                  data-email="example@gmail.com"
+                >
+<!--                 Data saved on MY Form-->
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      placeholder="Your Name"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      id="email"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="number"
+                      class="form-control"
+                      name="phone"
+                      id="phone"
+                      placeholder="Your Phone number"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="subject"
+                      id="subject"
+                      placeholder="Subject"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <textarea
+                      class="form-control"
+                      name="message"
+                      id="message"
+                      rows="5"
+                      placeholder="Message"
+                      required
+                    ></textarea>
+                    <div class="validation"></div>
+                  </div>
+                  <button
+                    type="submit"
+                    value="Submit"
+                    class="btn btn-large btn-success"
+                  >
+                    Send
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <h3 class="cont-title">Visit Us</h3>
+              <div class="location-info">
+                <p class="white">
+                  <span aria-hidden="true" class="fa fa-map-marker"></span>Via
+                  Principe Amedeo 9, Torino, Italy
+                </p>
+                <p class="white">
+                  <span aria-hidden="true" class="fa fa-phone"></span>Phone:
+                  0039 333 12 68 347
+                </p>
+                <p class="white">
+                  <span aria-hidden="true" class="fa fa-envelope"></span>Email:
+                  bret@gmail.com
+                </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="contact-icon-container hidden-md hidden-sm hidden-xs">
+                <span aria-hidden="true" class="fa fa-envelope-o"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---->
+    <!---->
+    <footer class="" id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-7 footer-copyright">
+            © Bret Contact Form - All rights reserved
+            <div class="credits">
+              Designed by Abdul Qadeer
+            </div>
+          </div>
+          <div class="col-sm-5 footer-social">
+            <div class="pull-right hidden-xs hidden-sm">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-dribbble"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-google-plus"></i></a>
+              <a href="#"><i class="fa fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!---->
+    <!-- Submit the Form to Google Using "AJAX" -->
+    <script data-cfasync="false" src="form-submission-handler.js"></script>
+    <!-- END -->
+
+    <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+    <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+    <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+
+    <script src="js/form.js"></script>
+
+    <!--contact ends-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
